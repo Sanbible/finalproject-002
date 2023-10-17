@@ -26,8 +26,6 @@ class window:
         self.pva_button = customtkinter.CTkButton(self.root, text="PvA", font=('Comic Sans MS', 20) )
         self.pva_button.grid(row=20, column=2, padx=20, pady=5)
         
-        
-        
         self.root.mainloop()
 
 window()
