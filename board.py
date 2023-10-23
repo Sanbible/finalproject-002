@@ -12,8 +12,9 @@ class game_othello:
         self.tb=PhotoImage(file="blackbg.png") #py2
         self.tw=PhotoImage(file="whitebg.png") #py3
         self.ck=PhotoImage(file="mark.png") #py4
-        self.table = self.board()
+        self.table = self.board(self.right_frame)
         self.mark1()
+        
         self.root.mainloop()
     
     def board(self):
