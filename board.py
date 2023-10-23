@@ -6,7 +6,7 @@ from tkinter import PhotoImage
 class game_othello:
 
     def  __init__(self):
-        self.root = tk.Tk()
+        self.root = tk.Toplevel()
         self.root.title("Othello")
         self.bg=PhotoImage(file="bg.png") #py1
         self.tb=PhotoImage(file="blackbg.png") #py2
@@ -39,5 +39,3 @@ class game_othello:
         self.table[4][3]["image"]="pyimage3"
         self.table[4][4]["image"]="pyimage2"
     
-
-    # def check(self)    

@@ -2,6 +2,8 @@ from board import game_othello
 import tkinter as tk
 from tkinter import *
 import customtkinter
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 def open_pvp():
     game_othello()
@@ -11,6 +13,7 @@ class window:
         self.root = tk.Tk()
         self.root.title("Othello")
         self.root.geometry("300x250")
+        
 
         self.label = tk.Label(self.root, text="WELCOME TO OTHELLO", fg = 'Black', font=('Comic Sans MS', 18))
         self.label.grid(row=5, column=2, pady=5, padx=5, sticky=tk.NS)
@@ -27,5 +30,5 @@ class window:
         self.pva_button.grid(row=20, column=2, padx=20, pady=5)
         
         self.root.mainloop()
-
+    
 window()
